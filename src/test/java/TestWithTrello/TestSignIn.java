@@ -1,5 +1,6 @@
 package TestWithTrello;
 
+import Help.Help;
 import Help.OpenBrowsers;
 import WithTrello.Pages.Boards;
 import WithTrello.Pages.TrelloHomePage;
@@ -9,11 +10,17 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
 public class TestSignIn {
 
     static WebDriver driver;
     static TrelloSingIn singIn;
     static Boards boards;
+    Help help = new Help();
 
     @BeforeSuite
     public void setUp() {
@@ -23,11 +30,13 @@ public class TestSignIn {
     }
 
     @Test(priority = 1)
-    public void testEnterEmail() throws InterruptedException {
+    public void testEnterEmail() throws InterruptedException, IOException {
 
         TrelloHomePage homePage = new TrelloHomePage(driver);
+
         singIn = homePage.login();
-        singIn.setEmail("ammar.alhazinah@gmail.com");
+        String username = help.readFile("username");
+        singIn.setEmail(username);
         singIn.clickSignInBtn();
 
 //        String text = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/section/div[1]/div[1]/div/div")).getText();
@@ -36,14 +45,15 @@ public class TestSignIn {
     }
 
     @Test(priority = 2)
-    public void testEnterPassword() throws InterruptedException {
+    public void testEnterPassword() throws InterruptedException, IOException {
         /*
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
         WebElement element = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.id("Password")));
                 */
+        String password = help.readFile("password");
         Thread.sleep(3000);
-        singIn.setPassword("test@123");
+        singIn.setPassword(password);
         singIn.clickLogin();
 
     }
