@@ -1,107 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-01T12:04:17 IDT" name="Command line suite" finished-at="2022-10-01T12:04:42 IDT" duration-ms="25234">
+  <suite started-at="2022-10-01T12:31:02 IDT" name="Test " finished-at="2022-10-01T12:31:07 IDT" duration-ms="4780">
     <groups>
     </groups>
-    <test started-at="2022-10-01T12:04:17 IDT" name="Command line test" finished-at="2022-10-01T12:04:42 IDT" duration-ms="25234">
+    <test started-at="2022-10-01T12:31:02 IDT" name="sing in" finished-at="2022-10-01T12:31:07 IDT" duration-ms="4780">
       <class name="TestWithTrello.TestSignIn">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestWithTrello.TestSignIn@74455848]" started-at="2022-10-01T12:04:16 IDT" name="setUp" finished-at="2022-10-01T12:04:17 IDT" duration-ms="1547" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestWithTrello.TestSignIn@1a18644]" started-at="2022-10-01T12:31:00 IDT" name="setUp" finished-at="2022-10-01T12:31:02 IDT" duration-ms="2024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testEnterEmail()[pri:1, instance:TestWithTrello.TestSignIn@74455848]" started-at="2022-10-01T12:04:38 IDT" name="testEnterEmail" finished-at="2022-10-01T12:04:39 IDT" duration-ms="1754" status="PASS">
+        <test-method signature="testEnterEmail()[pri:1, instance:TestWithTrello.TestSignIn@1a18644]" started-at="2022-10-01T12:31:02 IDT" name="testEnterEmail" finished-at="2022-10-01T12:31:03 IDT" duration-ms="1566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterEmail -->
-        <test-method signature="testEnterPassword()[pri:2, instance:TestWithTrello.TestSignIn@74455848]" started-at="2022-10-01T12:04:39 IDT" name="testEnterPassword" finished-at="2022-10-01T12:04:42 IDT" duration-ms="3097" status="PASS">
+        <test-method signature="testEnterPassword()[pri:2, instance:TestWithTrello.TestSignIn@1a18644]" started-at="2022-10-01T12:31:03 IDT" name="testEnterPassword" finished-at="2022-10-01T12:31:07 IDT" duration-ms="3136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterPassword -->
       </class> <!-- TestWithTrello.TestSignIn -->
-      <class name="TestSingIn">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestSingIn@2e55dd0c]" started-at="2022-10-01T12:04:14 IDT" name="setUp" finished-at="2022-10-01T12:04:16 IDT" duration-ms="1724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testSingIn()[pri:0, instance:TestSingIn@2e55dd0c]" started-at="2022-10-01T12:04:29 IDT" name="testSingIn" finished-at="2022-10-01T12:04:38 IDT" duration-ms="8634" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSingIn -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestSingIn@2e55dd0c]" started-at="2022-10-01T12:04:42 IDT" name="closeBrowser" finished-at="2022-10-01T12:04:42 IDT" duration-ms="52" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- TestSingIn -->
-      <class name="TestOpenBrowser">
-        <test-method signature="testOne(java.lang.String)[pri:0, instance:TestOpenBrowser@2cd2a21f]" started-at="2022-10-01T12:04:29 IDT" name="testOne" finished-at="2022-10-01T12:04:29 IDT" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'webDriverName' is required by @Test on method testOne but has not been marked @Optional or defined
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'webDriverName' is required by @Test on method testOne but has not been marked @Optional or defined
-
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testOne -->
-      </class> <!-- TestOpenBrowser -->
-      <class name="TestAddressPage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestAddressPage@34f7cfd9]" started-at="2022-10-01T12:04:11 IDT" name="setUp" finished-at="2022-10-01T12:04:14 IDT" duration-ms="2482" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testSingIn()[pri:0, instance:TestAddressPage@34f7cfd9]" started-at="2022-10-01T12:04:17 IDT" name="testSingIn" finished-at="2022-10-01T12:04:27 IDT" duration-ms="9564" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSingIn -->
-        <test-method signature="testClickAddressLink()[pri:0, instance:TestAddressPage@34f7cfd9]" started-at="2022-10-01T12:04:27 IDT" name="testClickAddressLink" finished-at="2022-10-01T12:04:29 IDT" depends-on-methods="TestAddressPage.testSingIn" duration-ms="2080" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testClickAddressLink -->
-      </class> <!-- TestAddressPage -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- sing in -->
+  </suite> <!-- Test  -->
 </testng-results>

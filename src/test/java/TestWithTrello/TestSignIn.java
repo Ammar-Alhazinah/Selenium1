@@ -69,9 +69,9 @@ public class TestSignIn {
         boards.addCardClick("Card Title Test");
     }
 */
-   /* @AfterSuite
+    @AfterSuite
     public void quite() throws InterruptedException {
-        Thread.sleep(30000);
+        Thread.sleep(6000);
         driver.quit();
-    }*/
+    }
 }
